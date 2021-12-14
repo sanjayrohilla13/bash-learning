@@ -7,7 +7,7 @@ while [ $counter -lt 5 ];
 
 # until loop
 counter=1
-until [ $counter -lt 5 ];
+until [ $counter -ge 5 ];
  do 
  echo "until loop $counter" 
  counter=$((counter+1)) 
