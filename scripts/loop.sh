@@ -4,3 +4,4 @@ while [ $counter -lt 5 ]
         echo "while loop"
         counter=$((counter+1)) 
    done 
+   
