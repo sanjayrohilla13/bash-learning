@@ -1,4 +1,4 @@
-for counter in {10..20..1}
-do
-echo "for loop $counter"
-done
+for i in {0..10..2}
+  do 
+     echo "Welcome $i times"
+ done
