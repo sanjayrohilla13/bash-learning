@@ -1,4 +1,4 @@
-if [ -a "shell-inq" ];
+if [ -a "shell-inq.sh" ];
 then 
    echo "shell-inq exist"
 else
