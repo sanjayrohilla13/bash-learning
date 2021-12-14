@@ -6,10 +6,10 @@ while [ $counter -lt 5 ];
  done 
 
 # until loop
-counter= 10
-until [ $counter -gt 5 ];
+counter=1
+until [ $counter -lt 5 ];
  do 
  echo "until loop $counter" 
- counter=$((counter -1)) 
+ counter=$((counter+1)) 
  done
    
