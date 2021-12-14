@@ -5,4 +5,11 @@ while [ $counter -lt 5 ];
         counter=$(( counter+1 )) 
  done 
 
+# until loop
+counter= 10
+until [ $counter -gt 5 ];
+ do 
+ echo "until loop $counter" 
+ counter=$((counter -1)) 
+ done
    
