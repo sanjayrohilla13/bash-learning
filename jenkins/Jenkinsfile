@@ -9,7 +9,7 @@ pipeline {
         stage('Getting code from GITHUB') {
             steps {
                 echo 'Getting code from GITHUB'
-                git 'https://github.com/sanjayrohilla13/bash-learning.git'
+                git branch: params.BRANCH, url: 'https://github.com/sanjayrohilla13/bash-learning.git'
             }
         }
         stage('Build-stage') {
