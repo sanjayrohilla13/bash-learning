@@ -5,5 +5,5 @@ for i in 1 2 3 4 5 6
 # select 
 select i in 1 2 3 4 5
 do
-echo "Select $i"
+echo "select $i"
 done
