@@ -9,6 +9,7 @@ pipeline {
         }
         stage('Stage 2') {
             steps {
+                sh '''
                 cd scripts
                 sh shell-inq.sh
                 sh if-then-else.sh
@@ -16,6 +17,7 @@ pipeline {
                 # sh loop.sh
                 sh function1.sh
                 pwd
+                '''
             }
         }
     }
