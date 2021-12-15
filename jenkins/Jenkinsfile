@@ -2,12 +2,13 @@ pipeline {
     agent any
 
     stages {
-        stage('Stage 1') {
+        stage('Getting code from GITHUB') {
             steps {
-                echo 'Hello World 1'
+                echo 'Getting code from GITHUB'
+                git 'https://github.com/sanjayrohilla13/bash-learning.git'
             }
         }
-        stage('Stage 2') {
+        stage('Build-stage') {
             steps {
                 sh '''
                 cd scripts
