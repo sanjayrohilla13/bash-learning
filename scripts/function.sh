@@ -1,5 +1,4 @@
-function func1
-{
-    local var='func1 local'
-    echo "function 1"
-}
+function print_msg {
+       echo "Hello, World"
+ }
+ print_msg
