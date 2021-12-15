@@ -1,4 +1,5 @@
-function print_msg {
+function print_msg()
+ {
        echo "Hello, World"
  }
  print_msg
