@@ -23,6 +23,7 @@ pipeline {
                 sh function1.sh
                 pwd
                 echo "The branch name is $BRANCH"
+                echo " new branch change is successful"
                 '''
             }
         }
