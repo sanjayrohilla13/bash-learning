@@ -9,7 +9,13 @@ pipeline {
         }
         stage('Stage 2') {
             steps {
-                echo 'Hello World 2'
+                cd scripts
+                sh shell-inq.sh
+                sh if-then-else.sh
+                sh file-check.sh
+                # sh loop.sh
+                sh function1.sh
+                pwd
             }
         }
     }
