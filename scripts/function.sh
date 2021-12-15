@@ -1,8 +1,5 @@
-function hi()
+function func1()
 {
-    echo "function 1 hi"
-}
-function hello()
-{
-    echo "function hello"
+    local var='func1 local'
+    echo "function 1"
 }
