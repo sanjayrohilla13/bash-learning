@@ -1,8 +1,8 @@
 pipeline {
     agent any
 
-    parameters {
-        string(defaultValue: "feature-1", description: 'This is a parameter', name: 'BRANCH')
+    parameters { 
+        string(name: 'BRANCH', defaultValue: 'feature-1', description: 'Enter the branch name') 
     }
 
     stages {
@@ -22,7 +22,7 @@ pipeline {
                 # sh loop.sh
                 sh function1.sh
                 pwd
-                echo ${BRANCH}
+                echo "The branch name is $BRANCH"
                 '''
             }
         }
